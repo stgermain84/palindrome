@@ -1,0 +1,16 @@
+function palindrome(str) {
+  const firstStr = str.replace(/[^a-zA-Z0-9]/g, '');
+  const allLower = firstStr.toLowerCase();
+  var secondStr = "";
+  for (var i = allLower.length - 1; i >=0; i--)
+  {
+      secondStr += allLower[i];
+  }
+  console.log(allLower);
+  console.log(secondStr);
+  return allLower == secondStr;
+}
+
+palindrome("eye");
+palindrome("house");
+palindrome("1 eye for of 1 eye.")
